@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Tareas</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <ul>
+        {% for t in tareas %}
+            <li><a href="/tareas/{{ forloop.counter }}/">{{ t }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
