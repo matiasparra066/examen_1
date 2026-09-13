@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mis Notas</title></head>
+<body>
+    <h1>Lista de Notas</h1>
+    <ul>
+        {% for n in notas %}
+            <li><a href="{% url 'detalle_nota' forloop.counter %}">{{ n }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
